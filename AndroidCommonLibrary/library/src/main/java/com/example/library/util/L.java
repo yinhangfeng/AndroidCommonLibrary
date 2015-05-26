@@ -24,7 +24,7 @@ public class L {
     }
 
     /**
-     * 设置最低的Log等级,大于此等级的可以Log
+     * 设置最低的Log等级,大于等于此等级的可以Log
      * @param level {@link Log#VERBOSE}, {@link Log#DEBUG}, {@link Log#INFO}, {@link Log#WARN}, {@link Log#ERROR}
      */
     public static void setMinimumLoggingLevel(int level) {
