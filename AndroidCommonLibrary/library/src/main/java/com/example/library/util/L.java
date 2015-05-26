@@ -661,7 +661,7 @@ public class L {
     }
 
     /**
-     * @param TAG_OBJ 如果为String 则以该String为TAG,否则以TAG_OBJ.getClass().getSimpleNamwtf()为TAG
+     * @param TAG_OBJ 如果为String 则以该String为TAG,否则以TAG_OBJ.getClass().getSimpleName()为TAG
      * @param tr 异常
      * @param msg 消息
      * @param args 参数 直接与msg拼接
