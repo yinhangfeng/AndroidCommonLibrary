@@ -538,6 +538,24 @@ public class L {
         }
     }
 
+    public static void e(String TAG, Throwable tr, String msg, Object arg1) {
+        if(allowE) {
+            log(Log.ERROR, TAG, tr, false, msg, arg1);
+        }
+    }
+
+    public static void e(String TAG, Throwable tr, String msg, Object arg1, Object arg2) {
+        if(allowE) {
+            log(Log.ERROR, TAG, tr, false, msg, arg1, arg2);
+        }
+    }
+
+    public static void e(String TAG, Throwable tr, String msg, Object arg1, Object arg2, Object arg3) {
+        if(allowE) {
+            log(Log.ERROR, TAG, tr, false, msg, arg1, arg2, arg3);
+        }
+    }
+
     public static void e(String TAG, Throwable tr, String msg, Object... args) {
         if(allowE) {
             log(Log.ERROR, TAG, tr, false, msg, args);
@@ -583,6 +601,24 @@ public class L {
     public static void fe(String TAG, String format, Object... args) {
         if(allowE) {
             log(Log.ERROR, TAG, null, true, format, args);
+        }
+    }
+
+    public static void fe(String TAG, Throwable tr, String msg, Object arg1) {
+        if(allowE) {
+            log(Log.ERROR, TAG, tr, true, msg, arg1);
+        }
+    }
+
+    public static void fe(String TAG, Throwable tr, String msg, Object arg1, Object arg2) {
+        if(allowE) {
+            log(Log.ERROR, TAG, tr, true, msg, arg1, arg2);
+        }
+    }
+
+    public static void fe(String TAG, Throwable tr, String msg, Object arg1, Object arg2, Object arg3) {
+        if(allowE) {
+            log(Log.ERROR, TAG, tr, true, msg, arg1, arg2, arg3);
         }
     }
 
