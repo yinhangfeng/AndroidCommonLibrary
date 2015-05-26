@@ -64,49 +64,49 @@ public class L {
 
     public static void v(String msg) {
         if(allowV) {
-            println(Log.VERBOSE, null, null, false, msg);
+            log(Log.VERBOSE, null, null, false, msg);
         }
     }
 
     public static void v(String TAG, String msg) {
         if(allowV) {
-            println(Log.VERBOSE, TAG, null, false, msg);
+            log(Log.VERBOSE, TAG, null, false, msg);
         }
     }
 
     public static void v(String TAG, String msg, Object arg1) {
         if(allowV) {
-            println(Log.VERBOSE, TAG, null, false, msg, arg1);
+            log(Log.VERBOSE, TAG, null, false, msg, arg1);
         }
     }
 
     public static void v(String TAG, String msg, Object arg1, Object arg2) {
         if(allowV) {
-            println(Log.VERBOSE, TAG, null, false, msg, arg1, arg2);
+            log(Log.VERBOSE, TAG, null, false, msg, arg1, arg2);
         }
     }
 
     public static void v(String TAG, String msg, Object arg1, Object arg2, Object arg3) {
         if(allowV) {
-            println(Log.VERBOSE, TAG, null, false, msg, arg1, arg2, arg3);
+            log(Log.VERBOSE, TAG, null, false, msg, arg1, arg2, arg3);
         }
     }
 
     public static void v(String TAG, String msg, Object... args) {
         if(allowV) {
-            println(Log.VERBOSE, TAG, null, false, msg, args);
+            log(Log.VERBOSE, TAG, null, false, msg, args);
         }
     }
 
     public static void v(String TAG, Throwable tr, String msg, Object... args) {
         if(allowV) {
-            println(Log.VERBOSE, TAG, tr, false, msg, args);
+            log(Log.VERBOSE, TAG, tr, false, msg, args);
         }
     }
 
     public static void v(Object TAG_OBJ, String msg, Object... args) {
         if(allowV) {
-            println(Log.VERBOSE, TAG_OBJ, null, false, msg, args);
+            log(Log.VERBOSE, TAG_OBJ, null, false, msg, args);
         }
     }
 
@@ -118,43 +118,43 @@ public class L {
      */
     public static void v(Object TAG_OBJ, Throwable tr, String msg, Object... args) {
         if(allowV) {
-            println(Log.VERBOSE, TAG_OBJ, tr, false, msg, args);
+            log(Log.VERBOSE, TAG_OBJ, tr, false, msg, args);
         }
     }
 
     public static void fv(String TAG, String format, Object arg1) {
         if(allowV) {
-            println(Log.VERBOSE, TAG, null, true, format, arg1);
+            log(Log.VERBOSE, TAG, null, true, format, arg1);
         }
     }
 
     public static void fv(String TAG, String format, Object arg1, Object arg2) {
         if(allowV) {
-            println(Log.VERBOSE, TAG, null, true, format, arg1, arg2);
+            log(Log.VERBOSE, TAG, null, true, format, arg1, arg2);
         }
     }
 
     public static void fv(String TAG, String format, Object arg1, Object arg2, Object arg3) {
         if(allowV) {
-            println(Log.VERBOSE, TAG, null, true, format, arg1, arg2, arg3);
+            log(Log.VERBOSE, TAG, null, true, format, arg1, arg2, arg3);
         }
     }
 
     public static void fv(String TAG, String format, Object... args) {
         if(allowV) {
-            println(Log.VERBOSE, TAG, null, true, format, args);
+            log(Log.VERBOSE, TAG, null, true, format, args);
         }
     }
 
     public static void fv(String TAG, Throwable tr, String format, Object... args) {
         if(allowV) {
-            println(Log.VERBOSE, TAG, null, true, format, args);
+            log(Log.VERBOSE, TAG, null, true, format, args);
         }
     }
 
     public static void fv(Object TAG_OBJ, String format, Object... args) {
         if(allowV) {
-            println(Log.VERBOSE, TAG_OBJ, null, true, format, args);
+            log(Log.VERBOSE, TAG_OBJ, null, true, format, args);
         }
     }
 
@@ -166,7 +166,7 @@ public class L {
      */
     public static void fv(Object TAG_OBJ, Throwable tr, String format, Object... args) {
         if(allowV) {
-            println(Log.VERBOSE, TAG_OBJ, tr, true, format, args);
+            log(Log.VERBOSE, TAG_OBJ, tr, true, format, args);
         }
     }
 
@@ -174,49 +174,49 @@ public class L {
 
     public static void d(String msg) {
         if(allowD) {
-            println(Log.DEBUG, null, null, false, msg);
+            log(Log.DEBUG, null, null, false, msg);
         }
     }
 
     public static void d(String TAG, String msg) {
         if(allowD) {
-            println(Log.DEBUG, TAG, null, false, msg);
+            log(Log.DEBUG, TAG, null, false, msg);
         }
     }
 
     public static void d(String TAG, String msg, Object arg1) {
         if(allowD) {
-            println(Log.DEBUG, TAG, null, false, msg, arg1);
+            log(Log.DEBUG, TAG, null, false, msg, arg1);
         }
     }
 
     public static void d(String TAG, String msg, Object arg1, Object arg2) {
         if(allowD) {
-            println(Log.DEBUG, TAG, null, false, msg, arg1, arg2);
+            log(Log.DEBUG, TAG, null, false, msg, arg1, arg2);
         }
     }
 
     public static void d(String TAG, String msg, Object arg1, Object arg2, Object arg3) {
         if(allowD) {
-            println(Log.DEBUG, TAG, null, false, msg, arg1, arg2, arg3);
+            log(Log.DEBUG, TAG, null, false, msg, arg1, arg2, arg3);
         }
     }
 
     public static void d(String TAG, String msg, Object... args) {
         if(allowD) {
-            println(Log.DEBUG, TAG, null, false, msg, args);
+            log(Log.DEBUG, TAG, null, false, msg, args);
         }
     }
 
     public static void d(String TAG, Throwable tr, String msg, Object... args) {
         if(allowD) {
-            println(Log.DEBUG, TAG, tr, false, msg, args);
+            log(Log.DEBUG, TAG, tr, false, msg, args);
         }
     }
 
     public static void d(Object TAG_OBJ, String msg, Object... args) {
         if(allowD) {
-            println(Log.DEBUG, TAG_OBJ, null, false, msg, args);
+            log(Log.DEBUG, TAG_OBJ, null, false, msg, args);
         }
     }
 
@@ -228,43 +228,43 @@ public class L {
      */
     public static void d(Object TAG_OBJ, Throwable tr, String msg, Object... args) {
         if(allowD) {
-            println(Log.DEBUG, TAG_OBJ, tr, false, msg, args);
+            log(Log.DEBUG, TAG_OBJ, tr, false, msg, args);
         }
     }
 
     public static void fd(String TAG, String format, Object arg1) {
         if(allowD) {
-            println(Log.DEBUG, TAG, null, true, format, arg1);
+            log(Log.DEBUG, TAG, null, true, format, arg1);
         }
     }
 
     public static void fd(String TAG, String format, Object arg1, Object arg2) {
         if(allowD) {
-            println(Log.DEBUG, TAG, null, true, format, arg1, arg2);
+            log(Log.DEBUG, TAG, null, true, format, arg1, arg2);
         }
     }
 
     public static void fd(String TAG, String format, Object arg1, Object arg2, Object arg3) {
         if(allowD) {
-            println(Log.DEBUG, TAG, null, true, format, arg1, arg2, arg3);
+            log(Log.DEBUG, TAG, null, true, format, arg1, arg2, arg3);
         }
     }
 
     public static void fd(String TAG, String format, Object... args) {
         if(allowD) {
-            println(Log.DEBUG, TAG, null, true, format, args);
+            log(Log.DEBUG, TAG, null, true, format, args);
         }
     }
 
     public static void fd(String TAG, Throwable tr, String format, Object... args) {
         if(allowD) {
-            println(Log.DEBUG, TAG, null, true, format, args);
+            log(Log.DEBUG, TAG, null, true, format, args);
         }
     }
 
     public static void fd(Object TAG_OBJ, String format, Object... args) {
         if(allowD) {
-            println(Log.DEBUG, TAG_OBJ, null, true, format, args);
+            log(Log.DEBUG, TAG_OBJ, null, true, format, args);
         }
     }
 
@@ -276,7 +276,7 @@ public class L {
      */
     public static void fd(Object TAG_OBJ, Throwable tr, String format, Object... args) {
         if(allowD) {
-            println(Log.DEBUG, TAG_OBJ, tr, true, format, args);
+            log(Log.DEBUG, TAG_OBJ, tr, true, format, args);
         }
     }
 
@@ -284,49 +284,49 @@ public class L {
 
     public static void i(String msg) {
         if(allowI) {
-            println(Log.INFO, null, null, false, msg);
+            log(Log.INFO, null, null, false, msg);
         }
     }
 
     public static void i(String TAG, String msg) {
         if(allowI) {
-            println(Log.INFO, TAG, null, false, msg);
+            log(Log.INFO, TAG, null, false, msg);
         }
     }
 
     public static void i(String TAG, String msg, Object arg1) {
         if(allowI) {
-            println(Log.INFO, TAG, null, false, msg, arg1);
+            log(Log.INFO, TAG, null, false, msg, arg1);
         }
     }
 
     public static void i(String TAG, String msg, Object arg1, Object arg2) {
         if(allowI) {
-            println(Log.INFO, TAG, null, false, msg, arg1, arg2);
+            log(Log.INFO, TAG, null, false, msg, arg1, arg2);
         }
     }
 
     public static void i(String TAG, String msg, Object arg1, Object arg2, Object arg3) {
         if(allowI) {
-            println(Log.INFO, TAG, null, false, msg, arg1, arg2, arg3);
+            log(Log.INFO, TAG, null, false, msg, arg1, arg2, arg3);
         }
     }
 
     public static void i(String TAG, String msg, Object... args) {
         if(allowI) {
-            println(Log.INFO, TAG, null, false, msg, args);
+            log(Log.INFO, TAG, null, false, msg, args);
         }
     }
 
     public static void i(String TAG, Throwable tr, String msg, Object... args) {
         if(allowI) {
-            println(Log.INFO, TAG, tr, false, msg, args);
+            log(Log.INFO, TAG, tr, false, msg, args);
         }
     }
 
     public static void i(Object TAG_OBJ, String msg, Object... args) {
         if(allowI) {
-            println(Log.INFO, TAG_OBJ, null, false, msg, args);
+            log(Log.INFO, TAG_OBJ, null, false, msg, args);
         }
     }
 
@@ -338,43 +338,43 @@ public class L {
      */
     public static void i(Object TAG_OBJ, Throwable tr, String msg, Object... args) {
         if(allowI) {
-            println(Log.INFO, TAG_OBJ, tr, false, msg, args);
+            log(Log.INFO, TAG_OBJ, tr, false, msg, args);
         }
     }
 
     public static void fi(String TAG, String format, Object arg1) {
         if(allowI) {
-            println(Log.INFO, TAG, null, true, format, arg1);
+            log(Log.INFO, TAG, null, true, format, arg1);
         }
     }
 
     public static void fi(String TAG, String format, Object arg1, Object arg2) {
         if(allowI) {
-            println(Log.INFO, TAG, null, true, format, arg1, arg2);
+            log(Log.INFO, TAG, null, true, format, arg1, arg2);
         }
     }
 
     public static void fi(String TAG, String format, Object arg1, Object arg2, Object arg3) {
         if(allowI) {
-            println(Log.INFO, TAG, null, true, format, arg1, arg2, arg3);
+            log(Log.INFO, TAG, null, true, format, arg1, arg2, arg3);
         }
     }
 
     public static void fi(String TAG, String format, Object... args) {
         if(allowI) {
-            println(Log.INFO, TAG, null, true, format, args);
+            log(Log.INFO, TAG, null, true, format, args);
         }
     }
 
     public static void fi(String TAG, Throwable tr, String format, Object... args) {
         if(allowI) {
-            println(Log.INFO, TAG, null, true, format, args);
+            log(Log.INFO, TAG, null, true, format, args);
         }
     }
 
     public static void fi(Object TAG_OBJ, String format, Object... args) {
         if(allowI) {
-            println(Log.INFO, TAG_OBJ, null, true, format, args);
+            log(Log.INFO, TAG_OBJ, null, true, format, args);
         }
     }
 
@@ -386,7 +386,7 @@ public class L {
      */
     public static void fi(Object TAG_OBJ, Throwable tr, String format, Object... args) {
         if(allowI) {
-            println(Log.INFO, TAG_OBJ, tr, true, format, args);
+            log(Log.INFO, TAG_OBJ, tr, true, format, args);
         }
     }
 
@@ -394,49 +394,49 @@ public class L {
 
     public static void w(String msg) {
         if(allowW) {
-            println(Log.WARN, null, null, false, msg);
+            log(Log.WARN, null, null, false, msg);
         }
     }
 
     public static void w(String TAG, String msg) {
         if(allowW) {
-            println(Log.WARN, TAG, null, false, msg);
+            log(Log.WARN, TAG, null, false, msg);
         }
     }
 
     public static void w(String TAG, String msg, Object arg1) {
         if(allowW) {
-            println(Log.WARN, TAG, null, false, msg, arg1);
+            log(Log.WARN, TAG, null, false, msg, arg1);
         }
     }
 
     public static void w(String TAG, String msg, Object arg1, Object arg2) {
         if(allowW) {
-            println(Log.WARN, TAG, null, false, msg, arg1, arg2);
+            log(Log.WARN, TAG, null, false, msg, arg1, arg2);
         }
     }
 
     public static void w(String TAG, String msg, Object arg1, Object arg2, Object arg3) {
         if(allowW) {
-            println(Log.WARN, TAG, null, false, msg, arg1, arg2, arg3);
+            log(Log.WARN, TAG, null, false, msg, arg1, arg2, arg3);
         }
     }
 
     public static void w(String TAG, String msg, Object... args) {
         if(allowW) {
-            println(Log.WARN, TAG, null, false, msg, args);
+            log(Log.WARN, TAG, null, false, msg, args);
         }
     }
 
     public static void w(String TAG, Throwable tr, String msg, Object... args) {
         if(allowW) {
-            println(Log.WARN, TAG, tr, false, msg, args);
+            log(Log.WARN, TAG, tr, false, msg, args);
         }
     }
 
     public static void w(Object TAG_OBJ, String msg, Object... args) {
         if(allowW) {
-            println(Log.WARN, TAG_OBJ, null, false, msg, args);
+            log(Log.WARN, TAG_OBJ, null, false, msg, args);
         }
     }
 
@@ -448,43 +448,43 @@ public class L {
      */
     public static void w(Object TAG_OBJ, Throwable tr, String msg, Object... args) {
         if(allowW) {
-            println(Log.WARN, TAG_OBJ, tr, false, msg, args);
+            log(Log.WARN, TAG_OBJ, tr, false, msg, args);
         }
     }
 
     public static void fw(String TAG, String format, Object arg1) {
         if(allowW) {
-            println(Log.WARN, TAG, null, true, format, arg1);
+            log(Log.WARN, TAG, null, true, format, arg1);
         }
     }
 
     public static void fw(String TAG, String format, Object arg1, Object arg2) {
         if(allowW) {
-            println(Log.WARN, TAG, null, true, format, arg1, arg2);
+            log(Log.WARN, TAG, null, true, format, arg1, arg2);
         }
     }
 
     public static void fw(String TAG, String format, Object arg1, Object arg2, Object arg3) {
         if(allowW) {
-            println(Log.WARN, TAG, null, true, format, arg1, arg2, arg3);
+            log(Log.WARN, TAG, null, true, format, arg1, arg2, arg3);
         }
     }
 
     public static void fw(String TAG, String format, Object... args) {
         if(allowW) {
-            println(Log.WARN, TAG, null, true, format, args);
+            log(Log.WARN, TAG, null, true, format, args);
         }
     }
 
     public static void fw(String TAG, Throwable tr, String format, Object... args) {
         if(allowW) {
-            println(Log.WARN, TAG, null, true, format, args);
+            log(Log.WARN, TAG, null, true, format, args);
         }
     }
 
     public static void fw(Object TAG_OBJ, String format, Object... args) {
         if(allowW) {
-            println(Log.WARN, TAG_OBJ, null, true, format, args);
+            log(Log.WARN, TAG_OBJ, null, true, format, args);
         }
     }
 
@@ -496,7 +496,7 @@ public class L {
      */
     public static void fw(Object TAG_OBJ, Throwable tr, String format, Object... args) {
         if(allowW) {
-            println(Log.WARN, TAG_OBJ, tr, true, format, args);
+            log(Log.WARN, TAG_OBJ, tr, true, format, args);
         }
     }
 
@@ -504,49 +504,49 @@ public class L {
 
     public static void e(String msg) {
         if(allowE) {
-            println(Log.ERROR, null, null, false, msg);
+            log(Log.ERROR, null, null, false, msg);
         }
     }
 
     public static void e(String TAG, String msg) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, false, msg);
+            log(Log.ERROR, TAG, null, false, msg);
         }
     }
 
     public static void e(String TAG, String msg, Object arg1) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, false, msg, arg1);
+            log(Log.ERROR, TAG, null, false, msg, arg1);
         }
     }
 
     public static void e(String TAG, String msg, Object arg1, Object arg2) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, false, msg, arg1, arg2);
+            log(Log.ERROR, TAG, null, false, msg, arg1, arg2);
         }
     }
 
     public static void e(String TAG, String msg, Object arg1, Object arg2, Object arg3) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, false, msg, arg1, arg2, arg3);
+            log(Log.ERROR, TAG, null, false, msg, arg1, arg2, arg3);
         }
     }
 
     public static void e(String TAG, String msg, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, false, msg, args);
+            log(Log.ERROR, TAG, null, false, msg, args);
         }
     }
 
     public static void e(String TAG, Throwable tr, String msg, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG, tr, false, msg, args);
+            log(Log.ERROR, TAG, tr, false, msg, args);
         }
     }
 
     public static void e(Object TAG_OBJ, String msg, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG_OBJ, null, false, msg, args);
+            log(Log.ERROR, TAG_OBJ, null, false, msg, args);
         }
     }
 
@@ -558,43 +558,43 @@ public class L {
      */
     public static void e(Object TAG_OBJ, Throwable tr, String msg, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG_OBJ, tr, false, msg, args);
+            log(Log.ERROR, TAG_OBJ, tr, false, msg, args);
         }
     }
 
     public static void fe(String TAG, String format, Object arg1) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, true, format, arg1);
+            log(Log.ERROR, TAG, null, true, format, arg1);
         }
     }
 
     public static void fe(String TAG, String format, Object arg1, Object arg2) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, true, format, arg1, arg2);
+            log(Log.ERROR, TAG, null, true, format, arg1, arg2);
         }
     }
 
     public static void fe(String TAG, String format, Object arg1, Object arg2, Object arg3) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, true, format, arg1, arg2, arg3);
+            log(Log.ERROR, TAG, null, true, format, arg1, arg2, arg3);
         }
     }
 
     public static void fe(String TAG, String format, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, true, format, args);
+            log(Log.ERROR, TAG, null, true, format, args);
         }
     }
 
     public static void fe(String TAG, Throwable tr, String format, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, true, format, args);
+            log(Log.ERROR, TAG, null, true, format, args);
         }
     }
 
     public static void fe(Object TAG_OBJ, String format, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG_OBJ, null, true, format, args);
+            log(Log.ERROR, TAG_OBJ, null, true, format, args);
         }
     }
 
@@ -606,7 +606,7 @@ public class L {
      */
     public static void fe(Object TAG_OBJ, Throwable tr, String format, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG_OBJ, tr, true, format, args);
+            log(Log.ERROR, TAG_OBJ, tr, true, format, args);
         }
     }
 
@@ -614,49 +614,49 @@ public class L {
 
     public static void wtf(String msg) {
         if(allowE) {
-            println(Log.ERROR, null, null, false, msg);
+            log(Log.ERROR, null, null, false, msg);
         }
     }
 
     public static void wtf(String TAG, String msg) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, false, msg);
+            log(Log.ERROR, TAG, null, false, msg);
         }
     }
 
     public static void wtf(String TAG, String msg, Object arg1) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, false, msg, arg1);
+            log(Log.ERROR, TAG, null, false, msg, arg1);
         }
     }
 
     public static void wtf(String TAG, String msg, Object arg1, Object arg2) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, false, msg, arg1, arg2);
+            log(Log.ERROR, TAG, null, false, msg, arg1, arg2);
         }
     }
 
     public static void wtf(String TAG, String msg, Object arg1, Object arg2, Object arg3) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, false, msg, arg1, arg2, arg3);
+            log(Log.ERROR, TAG, null, false, msg, arg1, arg2, arg3);
         }
     }
 
     public static void wtf(String TAG, String msg, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, false, msg, args);
+            log(Log.ERROR, TAG, null, false, msg, args);
         }
     }
 
     public static void wtf(String TAG, Throwable tr, String msg, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG, tr, false, msg, args);
+            log(Log.ERROR, TAG, tr, false, msg, args);
         }
     }
 
     public static void wtf(Object TAG_OBJ, String msg, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG_OBJ, null, false, msg, args);
+            log(Log.ERROR, TAG_OBJ, null, false, msg, args);
         }
     }
 
@@ -668,43 +668,43 @@ public class L {
      */
     public static void wtf(Object TAG_OBJ, Throwable tr, String msg, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG_OBJ, tr, false, msg, args);
+            log(Log.ERROR, TAG_OBJ, tr, false, msg, args);
         }
     }
 
     public static void fwtf(String TAG, String format, Object arg1) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, true, format, arg1);
+            log(Log.ERROR, TAG, null, true, format, arg1);
         }
     }
 
     public static void fwtf(String TAG, String format, Object arg1, Object arg2) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, true, format, arg1, arg2);
+            log(Log.ERROR, TAG, null, true, format, arg1, arg2);
         }
     }
 
     public static void fwtf(String TAG, String format, Object arg1, Object arg2, Object arg3) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, true, format, arg1, arg2, arg3);
+            log(Log.ERROR, TAG, null, true, format, arg1, arg2, arg3);
         }
     }
 
     public static void fwtf(String TAG, String format, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, true, format, args);
+            log(Log.ERROR, TAG, null, true, format, args);
         }
     }
 
     public static void fwtf(String TAG, Throwable tr, String format, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG, null, true, format, args);
+            log(Log.ERROR, TAG, null, true, format, args);
         }
     }
 
     public static void fwtf(Object TAG_OBJ, String format, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG_OBJ, null, true, format, args);
+            log(Log.ERROR, TAG_OBJ, null, true, format, args);
         }
     }
 
@@ -716,7 +716,7 @@ public class L {
      */
     public static void fwtf(Object TAG_OBJ, Throwable tr, String format, Object... args) {
         if(allowE) {
-            println(Log.ERROR, TAG_OBJ, tr, true, format, args);
+            log(Log.ERROR, TAG_OBJ, tr, true, format, args);
         }
     }
 
@@ -729,7 +729,7 @@ public class L {
      * @param msg 格式化字符串或只是消息 取决于参数format
      * @param args 参数
      */
-    public static void println(int priority, Object TAG_OBJ, Throwable tr, boolean format, String msg, Object... args) {
+    public static void log(int priority, Object TAG_OBJ, Throwable tr, boolean format, String msg, Object... args) {
         String TAG;
         if(TAG_OBJ instanceof String) {
             TAG = (String) TAG_OBJ;
@@ -743,9 +743,12 @@ public class L {
         if(format && msg != null) {
             Formatter f = new Formatter(sb, null);
             f.format(msg, args);
-        } else if(args != null) {
-            for(Object arg : args) {
-                sb.append(String.valueOf(arg));
+        } else {
+            sb.append(msg);
+            if(args != null) {
+                for(Object arg : args) {
+                    sb.append(String.valueOf(arg));
+                }
             }
         }
 
