@@ -777,8 +777,7 @@ public class L {
 
         StringBuilder sb = new StringBuilder(msg == null ? 0 : msg.length() + (args == null ? 0 : args.length * 10));
         if(format && msg != null) {
-            Formatter f = new Formatter(sb, null);
-            f.format(msg, args);
+            new Formatter(sb, null).format(msg, args);
         } else {
             sb.append(msg);
             if(args != null) {
