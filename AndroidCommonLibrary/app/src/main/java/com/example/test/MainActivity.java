@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.library.androidcommonlibrary.R;
@@ -19,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     *to
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -48,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    private void test(int a, String b, double c) {
+        L.d(TAG, "test() called with a = [", a, "], b = [", b, "], c = [", c, "]");
+        L.d(TAG, "test() returned ", 111);
+    }
+
+    private void test() {
+        L.d(TAG, "test() called with ");
+    }
+
     int level = -1;
     private void setting() {
         Log.e(TAG, "xxxxxxxxxxxx level=" + level);
@@ -66,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void log() {
         Exception e = new NullPointerException("xxx");
+
+        test(3, "xxx", 3.3);
+        test();
 
         L.v(TAG, "xxx", " a=", 1, " b=", "abc");
         L.fv(this, "xxx a=%d b=%s", 333, "abc");
