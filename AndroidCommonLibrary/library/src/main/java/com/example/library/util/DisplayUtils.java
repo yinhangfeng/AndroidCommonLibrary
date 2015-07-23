@@ -1,26 +1,29 @@
 package com.example.library.util;
 
 import android.content.res.Resources;
+import android.util.DisplayMetrics;
 
 public class DisplayUtils {
 
-    public static int dp2Px(float dp) {
-        final float scale = Resources.getSystem().getDisplayMetrics().density;
-        return (int) (dp * scale + 0.5f);
+    private static DisplayMetrics displayMetrics = Resources.getSystem().getDisplayMetrics();
+
+    public static int dp2px(float dp) {
+        return (int) (dp * displayMetrics.density + 0.5f);
     }
 
-    public static int px2Dp(float px) {
-        final float scale = Resources.getSystem().getDisplayMetrics().density;
-        return (int) (px / scale + 0.5f);
+    public static int px2dp(float px) {
+        return (int) (px / displayMetrics.density + 0.5f);
     }
 
-    public static int px2Sp(float pixelValue) {
-        float scaledDensity = Resources.getSystem().getDisplayMetrics().scaledDensity;
-        return (int) (pixelValue / scaledDensity + 0.5f);
+    public static int px2sp(float pixelValue) {
+        return (int) (pixelValue / displayMetrics.scaledDensity + 0.5f);
     }
 
-    public static int sp2Px(float spValue) {
-        float scaledDensity = Resources.getSystem().getDisplayMetrics().scaledDensity;
-        return (int) (spValue * scaledDensity);
+    public static int sp2px(float spValue) {
+        return (int) (spValue * displayMetrics.scaledDensity + 0.5f);
+    }
+
+    public static DisplayMetrics getDisplayMetrics() {
+        return displayMetrics;
     }
 }

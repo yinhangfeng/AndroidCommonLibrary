@@ -1,4 +1,4 @@
-package com.lightappbuilder.lab.util;
+package com.example.library.util;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -46,6 +46,10 @@ public class UiThreadHelper {
 
     public static void postDelayedOnUiThread(Runnable action, long delayMillis) {
         uiHandler.postDelayed(action, delayMillis);
+    }
+
+    public static void removeCallbacks(Runnable runnable) {
+        uiHandler.removeCallbacks(runnable);
     }
 
     public static Handler getUiHandler() {

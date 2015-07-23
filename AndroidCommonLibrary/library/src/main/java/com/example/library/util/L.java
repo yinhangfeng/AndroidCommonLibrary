@@ -782,6 +782,7 @@ public class L {
             sb.append(msg);
             if(args != null) {
                 for(Object arg : args) {
+                    //TODO arg为数组
                     sb.append(String.valueOf(arg));
                 }
             }
